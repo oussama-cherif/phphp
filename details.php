@@ -24,7 +24,7 @@
                     <h3>Age<h3>
         </div>
         <div class="animal-right">
-            <form action="" class="form-adoption">
+            <form action="api/reservation/create.php" class="form-adoption">
                 <h2>Formulaire d'adoption:</h2>
                 <input type="text" name="nom" placeholder="Nom complet  ex'John Doe'" required>
                 <input type="text" name="adresse" placeholder="Adresse d'habitation" required>
