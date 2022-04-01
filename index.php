@@ -16,11 +16,10 @@
       <li> <a href="animals.php">Animaux</a> </li>
     </ul>
     <form action="https://www.paypal.com/donate" method="post" target="_blank">
-      <input type="hidden" name="hosted_button_id" value="VNDEBPE7TYVRS" />
-      <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
+      <input type="hidden" name="hosted_button_id" value="CSVQM9UD3PV78" />
+      <input type="image" src="https://www.paypalobjects.com/fr_FR/FR/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Bouton Faites un don avec PayPal" />
       <img alt="" border="0" src="https://www.paypal.com/fr_FR/i/scr/pixel.gif" width="1" height="1" />
     </form>
-
   </nav>
   <section class="home-animals">
     <?php
@@ -28,9 +27,9 @@
     if (!empty($animals)) {
       foreach ($animals as $animal) {
         echo "
-        <div class='carte-animal'><a href='#'>  
+        <div class='carte-animal'><a href='details.php'>  
         <h3> $animal</h3>
-        <img src='dog.jpg' alt='dog'>
+        <img class='img-home' src='dog.jpg' alt='dog'>
         <h4> age : 3 ans <h4>
         </a></div>    
         ";
