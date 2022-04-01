@@ -23,7 +23,7 @@
   </nav>
   <section class="home-animals">
     <?php
-    $animals = ['rex', 'oliver', 'fahd', 'snoop'];
+    // $animals = ['rex', 'oliver', 'fahd', 'snoop'];
     if (!empty($animals)) {
       foreach ($animals as $animal) {
         echo "
@@ -41,5 +41,13 @@
     ?>
   </section>
 </body>
+<script defer>
+  fetch('http://localhost/phphp/api/animal/getAll.php')
+    .then(response => response.json())
+    .then(data => {
+      let animals = data.body
+    })
+    .catch(error => console.log(error.message));
+</script>
 
 </html>

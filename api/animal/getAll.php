@@ -10,12 +10,12 @@ $items = new Animal($db);
 $stmt = $items->getAnimals();
 $itemCount = $stmt->rowCount();
 
-echo json_encode($itemCount);
+// echo json_encode($itemCount);
 if ($itemCount > 0) {
 
   $animalArr = array();
   $animalArr["body"] = array();
-  $animalArr["itemCount"] = $itemCount;
+  // $animalArr["itemCount"] = $itemCount;
   while ($row = $stmt->fetch(PDO::FETCH_ASSOC)) {
     extract($row);
     $e = array(

@@ -24,12 +24,13 @@
                     <h3>Age<h3>
         </div>
         <div class="animal-right">
-            <form action="api/reservation/create.php" class="form-adoption">
+            <form method="POST" action="class/Reservations.php" class="form-adoption">
                 <h2>Formulaire d'adoption:</h2>
                 <input type="text" name="nom" placeholder="Nom complet  ex'John Doe'" required>
+                <input type="email" name="email" placeholder="Email ..." required>
                 <input type="text" name="adresse" placeholder="Adresse d'habitation" required>
                 <input type="text" name="telephone" placeholder="Numéro de Telephone" required>
-                <input type="text" name="cin" placeholder="CIN" required>
+                <input type="text" name="ci" placeholder="CI" required>
                 <button type="submit">Valider</button>
             </form>
         </div>
