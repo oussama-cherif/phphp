@@ -2,8 +2,8 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json; charset=UTF-8");
 
-include_once '../db/Database.php';
-include_once '../class/animals.php';
+include_once '../../db/Database.php';
+include_once '../../class/Animals.php';
 $database = new Database();
 $db = $database->getConnection();
 $items = new Animal($db);
